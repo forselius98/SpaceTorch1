@@ -26,3 +26,4 @@ frontend/coverage/
 
 # System
 .DS_Store
+/broadcast/**/run-latest.recovery.lock
