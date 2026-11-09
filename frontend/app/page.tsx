@@ -3,20 +3,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState, useSyncExternalStore } from "react";
-import {
-  useAccount,
-  useConnect,
-  useDisconnect,
-  useReadContract,
-  useSwitchChain,
-  useWriteContract,
-  useWaitForTransactionReceipt,
-} from "wagmi";
+import { useAccount, useConnect, useDisconnect, useReadContract, useSwitchChain, useWriteContract, useWaitForTransactionReceipt, } from "wagmi";
 import { sepolia } from "wagmi/chains";
 import { formatUnits } from "viem";
 
 const TOKEN_ADDRESS = "0x2e59788EE9A102dc1f7ADaAd6E0e2dFeCB8A60DB" as const;
-
 
 const tokenAbi = [
   {
